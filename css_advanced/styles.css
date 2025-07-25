@@ -61,7 +61,7 @@ ul li a {
     padding: 2rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     min-height: 100vh;
     position: relative;
     color: white;
@@ -159,12 +159,12 @@ p {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px; /* space between image and name */
+  margin-bottom: 10px; 
 }
 
 .avatar h3 {
   margin: 0;
-  margin-bottom: 10px; /* space between name and description */
+  margin-bottom: 10px; 
   font-size: 1rem;
   font-weight: bold;
 }
@@ -173,4 +173,18 @@ p {
   margin: 0;
   font-size: 0.85rem;
   color: #666;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #C271FF;
+}
+
+.tutorials {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
 }
