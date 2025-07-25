@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* .logo-smiley {
+  font-size: 2rem;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+} */
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    background-image: url('images/main_part.png');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    z-index: 0;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+.h1-schooled {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: sans serif;  
+}
+
+/* .register-btn {
+  display: block;
+  background-color: #C271FF;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-self: center;
+} */
+
+/* .main-content section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+} */
+
+/* .register-btn {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+} */
+/* 
+.tag-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+} */
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* keep all 4 in one row */
+  text-align: center;
+  gap: 0; /* we'll use margins for precise gaps */
+}
+
+.avatar-wrapper {
+  margin-top: 150px;
+}
+
+.avatar-wrapper h2 span {
+  color: #C271FF;
+}
+
+.avatar > div {
+  width: 150px;
+  margin-right: 139px; 
+  margin-top: 80px;/* default spacing */
+}
+
+.avatar > div:nth-child(1) {
+  margin-right: 139px; /* custom spacing between 2nd and 3rd */
+}
+
+.avatar > div:nth-child(2) {
+  margin-right: 131px; /* custom spacing between 2nd and 3rd */
+}
+
+.avatar > div:nth-child(3) {
+  margin-right: 139px; 
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px; /* space between image and name */
+}
+
+.avatar h3 {
+  margin: 0;
+  margin-bottom: 10px; /* space between name and description */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.avatar p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
