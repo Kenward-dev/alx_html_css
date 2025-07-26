@@ -19,22 +19,16 @@ nav {
 .navbar {
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
-/* .logo-smiley {
+.logo-smiley {
   font-size: 2rem;
   margin-right: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-} */
+  margin-top: 10px;
+  
+}
 
 ul {
     list-style: none;
@@ -61,7 +55,6 @@ ul li a {
     padding: 2rem;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     min-height: 100vh;
     position: relative;
     color: white;
@@ -75,57 +68,42 @@ p {
 .h1-schooled {
   margin-top: 100px;
   margin-bottom: 20px;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: bold;
   font-family: sans serif;  
 }
 
-/* .register-btn {
-  display: block;
+.intro {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.intro span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+.register-btn {
   background-color: #C271FF;
   color: white;
   padding: 15px 30px;
+  margin-top: 20px;
   border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  border-radius: 25px;
+  font-size: 1 rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   justify-content: center;
   align-self: center;
-} */
+}
 
-/* .main-content section div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; 
-} */
-
-/* .register-btn {
-  background-color: #C271FF;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 15px;
-} */
-/* 
-.tag-role {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; 
-} */
 
 .avatar {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* keep all 4 in one row */
+  flex-wrap: wrap; 
   text-align: center;
-  gap: 0; /* we'll use margins for precise gaps */
+  gap: 0; 
 }
 
 .avatar-wrapper {
@@ -139,15 +117,16 @@ p {
 .avatar > div {
   width: 150px;
   margin-right: 139px; 
-  margin-top: 80px;/* default spacing */
+  margin-top: 80px;
 }
 
 .avatar > div:nth-child(1) {
-  margin-right: 139px; /* custom spacing between 2nd and 3rd */
+  margin-right: 139px; 
+  margin-left: 140px;
 }
 
 .avatar > div:nth-child(2) {
-  margin-right: 131px; /* custom spacing between 2nd and 3rd */
+  margin-right: 131px; 
 }
 
 .avatar > div:nth-child(3) {
@@ -172,7 +151,7 @@ p {
 .avatar p {
   margin: 0;
   font-size: 0.85rem;
-  color: #666;
+  color: #ffff;
 }
 
 .testimonials {
@@ -181,10 +160,126 @@ p {
   justify-content: center;
   padding: 50px 0;
   background-color: #C271FF;
+  padding-left: 400px;
+}
+
+.tutorials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10%;
+}
+
+.tutorials-section h2 {
+  font-size: 1.5rem;
+  font-weight:normal;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tutorials-section h2 span {
+  color: #C271FF;
 }
 
 .tutorials {
   display: flex;
-  align-items: center;
+  align-items: space-between;
   padding: 50px 0;
 }
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.reviewer img{
+  margin-right: 10px;
+}
+
+.preview p {
+  color: #5b5a5a;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.free-membership {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #071629;
+}
+
+.testimonials img {
+  margin-right: 30px;
+}
+
+.review-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.review-wrapper p {
+  color: #C271FF;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1; 
+  align-self: center; ;
+}
+
+.review-stars {
+  display: flex;
+  gap:5px;
+  margin: 0;
+  align-items: center;
+}
+
+.review-stars div {
+  color: #C271FF; 
+}
+
+.review-stars i {
+  line-height: 1;
+  font-size: 0.9rem;
+}
+
+.review-stars div:last-child i {
+  color: #ccc; 
+}
+
