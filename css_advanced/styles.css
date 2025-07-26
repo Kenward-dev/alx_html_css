@@ -235,12 +235,17 @@ p {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.free-membership {
+/* .free-membership {
   display: flex;
-  align-items: center;
-  padding: 50px 0;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 5%;
   background-color: #071629;
-}
+  text-align: center;
+} */
+
 
 .testimonials img {
   margin-right: 30px;
@@ -283,3 +288,74 @@ p {
   color: #ccc; 
 }
 
+section:has(.free-membership) {
+    background-color: #071629;
+    padding-bottom: 60px;
+}
+
+section:has(.free-membership) h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+section:has(.free-membership) h2 span {
+    color: #C271FF;
+}
+
+.free-membership {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.free-membership > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    flex: 1;
+}
+
+.free-membership img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.free-membership h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.free-membership p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+}
+
+.free-membership + button,
+section:has(.free-membership) > button {
+    display: block;
+    margin: 0 auto;
+    background-color: #C271FF;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
