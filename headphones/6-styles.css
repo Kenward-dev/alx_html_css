@@ -352,13 +352,15 @@ h2 {
 .stat-item {
     width: 200px;
     height: 180px;
-    background: url('./images/pentagone.png') center/contain no-repeat;
+    background: #ff6b6b;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
+
 
 .stat-item:hover {
     transform: translateY(-5px);
