@@ -246,7 +246,7 @@ body {
 .what-we-do {
   padding: 4rem 1rem;
   text-align: center;
-  height: 90vh;
+  height: 100%;
 }
 
 .container {
@@ -296,4 +296,133 @@ h2 {
 .feature p {
   font-size: 0.85rem;
   color: #2d3e50;
+}
+
+.our-results {
+    padding: 6rem 1rem;
+    text-align: center;
+    background: url('./images/headphones_hero_2.jpg') center/cover;
+    background-color: #2c3e50;
+    position: relative;
+    color: #ffffff;
+}
+
+.our-results::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.7);
+    z-index: 1;
+}
+
+.our-results .container {
+    position: relative;
+    z-index: 2;
+}
+
+.our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.our-results .description {
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.results-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    width: 200px;
+    height: 180px;
+    background: url('./images/pentagone.png') center/contain no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-content {
+    text-align: center;
+    z-index: 2;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+@media screen and (max-width: 768px) {
+    .our-results {
+        padding: 4rem 1rem;
+    }
+
+    .our-results h2 {
+        font-size: 2rem;
+    }
+
+    .results-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .stat-item {
+        width: 180px;
+        height: 160px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .our-results h2 {
+        font-size: 1.8rem;
+    }
+
+    .stat-item {
+        width: 160px;
+        height: 140px;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
 }
