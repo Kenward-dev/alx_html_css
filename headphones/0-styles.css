@@ -425,4 +425,62 @@ h2 {
     .stat-label {
         font-size: 0.9rem;
     }
+
+    
+}
+
+.contact-us {
+  padding: 4rem 1rem;
+  background: #f9f9f9; 
+  color: #333;
+}
+
+.contact-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  resize: none; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #ff6b6b; 
+}
+
+.contact-form button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  width: 30%;
+  justify-content: center;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 30%;
+  border-radius: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #ff5252;
 }
